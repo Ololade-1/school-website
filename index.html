@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arizona ICT College</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">Programs</a>
+                        <div class="dropdown-content">
+                            <a href="undergraduate.html">Undergraduate Programs</a>
+                            <a href="postgraduate.html">Graduate Programs</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="course.html">Contact</a></li>
+                <li><a href="about.html">About</a></li> 
+                <li><a href="apply.html">Apply</a></li>
+            </ul>
+        </nav>
+        <h1>Arizona ICT College</h1>
+    </header>
+    
+    <div id="work-list">
+        <div class="work">
+        <img src="photo/first.jpg">
+        <div class="layer">
+        <h3>WELCOME TO ARIZONA ICT COLLEGE</h3><br>
+           <h6> Arizona ICT College has long been at the forefront of groundbreaking research, education and innovation.<br>
+            Through the development and application and web development principles across disciplines, <br>
+            we are tackling the major challenges of the 21st century on providing<br> easy way for Information Technology for world Needs.....</h6>
+    </div>
+    </div>
+</div>  
+     <div class="services-list">
+                <div>
+                    <h3>The place to Become<h3>
+                </div>
+                <div class="pass">
+                    <p>Join one of the Top 10 college for graduate success. 
+                        Experience a transformational education that grows your curiosity,
+                         builds your confidence and gives you the skills you need to have a 
+                         successful and meaningful career</p>                          
+                </div>
+            </div>
+
+            <div id="pic-work">
+                <div class="pic">
+                <img src="photo/image5.jpg">
+                <div class="lay">
+                <h3>Experince About Arizona ICT College</h3>
+            </div>
+            </div>
+        </div>  
+    
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col1">
+                        <img src="photo/image8.jpg" width="400px", height="500px"> 
+                    </div>
+                    <div class="about-col2">
+                        <h4>Meet some of the students, faculty and alumni who make up our community. </h4> <br/>
+                        <p class="art">What is Artificial Intelligence and Robotic Engineering?<br>
+                            At Arizon College, the Department of Artificial Intelligence and Robotic Engineering integrates multiple
+                             engineering disciplines and focuses on structural,
+                             aerodynamic, propulsion, and guidance and control challenges posed by Machines that processed the Data.</p>
+                            <div class="tab">
+                               
+                                <p class="tab-links active-link" onclick="opentab('news')" data-tab="news">College News</p>
+                                <p class="tab-links" onclick="opentab('faculty')" data-tab="faculty">Our Facaulties</p>
+                                <p class="tab-links" onclick="opentab('edu')" data-tab="edu">Scholarship Fully Funded</p>
+                                
+                            </div>
+                             
+                         
+                             <div class="tab-contents" id="news">
+                                <ul> 
+                                    <li><a href="#"><span>Congratulation to Newly Admitted student...</span></a></li>  
+                                    <li><a href="#"><span>Tuition Fee Deadline for current student.... </span></a></li>   
+                                    <li><a href="#"><span>Goverment of Nigera set to Explore and Vist our College soon ....</span></a></li>      
+                                    </ul>
+                                 </div> 
+                                 <div class="tab-contents active-tab" id="faculty">
+                                    <ul> 
+                                            <li><span>Facaulty of Information Technology</span></li>
+                                            <li><span>Facaulty of Technology Management</span></li>
+                                            <li><span>Facaulty of Artificial Inteligence</span></li>
+                                            <li><span>Facaulty of Engineering</span></li>
+                                            <li><span>Facaulty of Science</span></li>
+                                            <li><span>Facaulty of Computer Development</span></li>
+                                        </ul>
+                                     </div>  
+                                 <div class="tab-contents" id="edu">
+                                    <ul> 
+                                        <li><span>Muslim Association of Nigeria MSSN Scholarship</span></li>  
+                                        <li><span>Christian Fellowership Nigeria Scholarship</span></li>   
+                                        <li><span>Dangote Refinery Scholarship Africa Student</span></li>      
+                                        </ul>
+                                     </div> 
+                                     </div>   
+                                    
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    
+           <div class="enter">
+                <a href="course.html" class="btn" >Explore about Our Courses </a>
+                <a href="form.jpg" class="btn1"> Entry Requriment</a>
+                </div>
+                        <div id="pics-works">
+                            <div class="pic">
+                            <img src="photo/image6.jpg">
+                            <div class="lay">
+                            <h3>Vist Arizona ICT College ,
+                                <br>
+                                What is it like to be an Arizona ICT Student ?
+                                <br>
+                                 The best ICT College for Standard study and qualification for Career job</h3>
+                        </div>
+                        </div>
+                       
+                                               <div class="copyright">
+                                <p>Copyright @ by OLOLADE AKANBI</p>
+                            </div>
+                    
+                    </div>
+
+    <script>
+        
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname) {
+            for (var i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active-link");
+            }
+            for (var i = 0; i < tabcontents.length; i++) {
+                tabcontents[i].classList.remove("active-tab");
+            }
+    
+            document.querySelector('.tab-links[data-tab="' + tabname + '"]').classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    
+    
+</body>
+</html>

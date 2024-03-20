@@ -1,0 +1,160 @@
+/* Resetting default margin and padding */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    font-size: 30px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left:50%;
+ }
+ nav ul li{
+    display: inline-block;
+    list-style: none;
+   padding: 12px;
+   
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size:20px;
+    position:relative;
+}
+
+
+nav ul li a::after{
+    content:"";
+    width: 0px;
+    height: 3px;
+    background:white;
+    position: absolute;
+    left:0px;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+h2{
+    font-size: 25px;
+    color: green;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;}
+
+.contact-left {
+    float: left;
+    width: 50%;
+    padding: 20px;
+   
+}
+
+.contact-right {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    margin-left: 40%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form .btn:hover {
+    background-color: #555;
+}
+/*......social icon..........*/
+
+.social-icon {
+    margin-top: 20px;
+}
+
+.social-icon a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+    border-radius: 30%;
+}
+.social-icon a:hover {
+    background-color: #555;
+}
+p{
+    font-size: 20px;
+}
+/*...........galary.........*/
+.gallery-container {
+    width: 50%; 
+    height: 200px; 
+    overflow: hidden;
+    margin-left: 50%;
+    margin-top: 50px;
+  }
+  
+  .gallery {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .gallery img {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 300px; 
+    height: 200px; /
+  }
+  
